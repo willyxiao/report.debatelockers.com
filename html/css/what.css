@@ -1,0 +1,590 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height:100%;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: Bitstream Vera Sans, Tahoma, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+table {
+	font-size: inherit;
+}
+
+a {
+	color:#000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #888888;
+}
+
+#bottom_options{
+    position: relative; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+#bottom_options .option{
+    position: relative; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 2px; 
+    border: none;
+    background-color: transparent; 
+    color: #000088; 
+    font-size: 10pt;
+    width: 100px;  
+}
+
+#bottom_options .option:hover {
+    position: relative; 
+    left: 0px; 
+    padding: 2px; 
+    border: none;
+    background-color: transparent; 
+    color: #0000ff; 
+    font-size: 10pt; 
+    cursor: pointer; 
+}
+
+button.basic{
+    background-color: transparent; 
+    border: none; 
+    color: #000088;
+    text-decoration: none;
+}
+
+button.basic:hover{
+    background-color: transparent; 
+    border: none; 
+    color: #0000ff;  
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button.option {
+    padding: 2px; 
+    border: none;
+    background-color: transparent; 
+    color: #000088; 
+}
+
+button.option:hover {
+    color: #0000ff;
+    cursor: pointer; 
+}
+
+.center {
+    position: relative; 
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
+
+#content {
+    position: relative;
+    margin-left: 200px; 
+    margin-right: 180px; 
+	min-width: 900px; 
+	min-height: 500px; 
+	padding: none;
+	color: #000000;
+	z-index: 0; 
+}
+
+#content .fixed {
+    position: relative;
+    width: 720px;   
+}
+
+#mid {
+    position: relative; 
+    top: 60px; 
+    margin-left: 0px; 
+    margin-right: 0px; 
+    min-width: 1300px;  
+}
+
+#foot {
+    position: relative;
+    margin-left: 200px; 
+    margin-right: 180px; 
+	min-width: 900px; 
+	padding: none;
+	z-index: 0; 
+	height: 20px;
+	overflow: hidden;
+	text-align: center;
+	font-weight: 900; 
+}
+
+#foot > span,#head > span {
+	top: 35%;
+	position: relative;
+	padding: 20px;
+}
+
+#foot > span {
+	color: #393939;
+}
+
+.form_field{
+    position: relative;
+    padding: 5px; 
+}
+
+.form_field .field_title{
+    position: absolute; 
+    font-size: 10pt;
+    font-weight: 900; 
+    width: 90px; 
+    text-align: right; 
+}
+
+.form_field .field{
+    position: relative; 
+    left: 100px; 
+}
+
+.form_field input[type="text"], 
+.form_field input[type="password"] {
+    position: relative; 
+    left: 100px; 
+    padding: 2px; 
+}
+
+.form_field input[type="text"]:hover, 
+.form_field input[type="password"]:hover {
+    position: relative; 
+    left: 100px; 
+    padding: 2px;
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #666666; 
+}
+
+.form_field .field_checkbox {
+    position: relative; 
+    left: 100px; 
+    width: 100%; 
+    height: 150px; 
+}
+
+.form_field .check_group1 {
+    position: absolute; 
+    width: 30px;  
+}
+
+.form_field .check_group2 {
+    position: absolute; 
+    left: 40px; 
+    width: 100px; 
+}
+
+.form_field .checkbox {
+    padding: 2px; 
+}
+
+.form_field label.checkbox_label {
+    position: relative; 
+    padding: 2px; 
+    font-weight: 900; 
+}
+
+
+.form_field select {
+    position: relative; 
+    left: 100px; 
+    padding: 2px; 
+    height: 20px; 
+}
+
+.form_field textarea {
+    position: relative; 
+    left: 100px; 
+    padding: 2px; 
+}
+
+.form_field textarea:hover {
+    position: relative; 
+    left: 100px; 
+    padding: 2px;
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #666666;
+}
+
+#head {
+	position: fixed; 
+	height: 45px;
+	min-width: 1300px; 
+	width: 100%;
+	background-color: #9999ff;
+	border-bottom-color: #000000; 
+	border-bottom-width: 3px; 
+	border-bottom-style: solid; 
+	overflow: hidden;
+	z-index: 3;
+}
+
+#head #title {
+    position: absolute; 
+    margin-right: auto; 
+    margin-left: auto; 
+    top: 50%; 
+    font-size: 20px; 
+    font-weight: 900; 
+    
+}
+
+#head #username {
+    position: absolute; 
+    right: 50px; 
+    top: 50%; 
+    color: #ffffff; 
+}
+
+input[type="text"], input[type="password"] {
+	padding:1px 3px 0px 3px;
+	border-color: #aaaaaa;
+	border-style: solid; 
+	border-width: 1px; 
+	font-family: "tahoma", "arial", "helvetica", "sans-serif";
+	font-size: 8pt;
+	color: #000000;
+	width:200px;
+}
+
+input #report_search {
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px; 
+}
+
+#logo {
+	height: 60px;
+	width: 244px;
+	background-image: url('images/logo.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding: 50px 0px 0px 0px;
+	text-align: center;
+}
+
+#logo ul {
+		float: left;
+		left: 50%;
+		margin: 0 auto;
+		position: relative;
+}
+
+#logo ul li {
+		float: left;
+		position: relative;
+		right: 50%;
+	margin: 0 1em 0 0;
+	list-style: none;
+}
+
+#navSideBar 
+{
+	position: fixed;
+	width: 200px;
+	height: 100%; 
+	padding: none;  
+	border-right-style: solid; 
+	border-right-color: #000000; 
+	border-right-width: 1px; 
+	background-color: #ffffff; 
+	z-index: 2; 
+}
+
+#navSideBar .navBody {
+    position: relative; 
+    top: 50px;
+    width: inherit;  
+}
+
+#navSideBar .navBody .navTitle {
+    text-align: center; 
+    font-size: 17px;
+    font-weight: 900;  
+    padding: 10px; 
+}
+
+#navSideBar .navBody .navLinks {
+    position: relative; 
+    font-weight: 900;
+    font-size: 10pt;  
+    width: 130px; 
+    margin-left: auto; 
+    margin-right: auto;  
+    margin-bottom: 4px; 
+    padding-left: 2px;
+    padding: 2px;  
+    display: block; 
+}
+
+#navSideBar .navBody .navLinks:hover {
+    position: relative; 
+    font-weight: 900; 
+    font-size: 10pt; 
+    width: 130px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 4px;  
+    padding-left: 2px; 
+    padding: 2px; 
+    background-color: #fffaaa; 
+    display: block; 
+    color: #000000; 
+    cursor: pointer; 
+}
+
+#report_search{
+    width: 120px; 
+}
+
+#round_info{
+    position: relative; 
+    left: 20px; 
+    font-size: 10pt;
+}
+
+#round_info .info_header{
+    position: absolute;  
+}
+
+#round_info .info_body{
+    position: relative;
+    min-height: 20px; 
+    left: 120px; 
+    padding-bottom: 4px; 
+}
+
+.search_adder{
+    position: relative; 
+    left: 110px; 
+    color: #000099; 
+}
+
+.search_adder:hover {
+    position: relative; 
+    left: 110px; 
+    color: #0000ff;
+    cursor: pointer;
+}
+
+.splitter {
+    height: 1px; 
+    background-color: #000000; 
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+.step {
+    padding-top: 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 400px;  
+}
+
+.step .image{
+    width: 100%; 
+}
+
+.step .image img{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;        
+}
+
+.step .instruction {
+    padding: 20px; 
+    font-size: 10pt; 
+    font-weight: 700;  
+}
+
+.step .step_title {
+    font-weight: 900; 
+    font-size: 12pt; 
+}
+
+.step_navBar {
+    position: relative; 
+    width: 100%; 
+    height: 30px; 
+    margin-left: 40px; 
+    margin-right: 40px; 
+}
+
+.step_navBar .step_nav {
+    font-size: 12pt; 
+    font-weight: 900;  
+}
+
+.step_navBar .step_nav:hover {
+    font-size: 12pt; 
+    font-weight: 900;  
+    background-color: #fffaaa; 
+    cursor: pointer; 
+}
+
+.step_navBar #step_forward {
+    position: absolute;
+    right: 0px; 
+    width: 60px; 
+}
+
+.step_navBar #step_backward {
+    position: absolute;
+    left: 0px; 
+    width: 60px; 
+}
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #000000
+}
+
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 3px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.table th {
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.table thead th {
+  line-height: 20px;
+  vertical-align: bottom;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table-striped tbody {
+    border-top: 2px solid #000000;
+}
+
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #eeeeee;
+}
+
+.table-striped tbody tr:nth-child(even) td,
+.table-striped tbody tr:nth-child(even) th {
+  
+}
+
+.toggle{
+    position: relative; 
+    text-align: center; 
+    font-size: 10px; 
+    font-weight: 900; 
+    width: 400px; 
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.toggle .togrow {
+    position: relative; 
+    height: 30px; 
+    width: 100%; 
+}
+
+.toggle .togrow .togname {
+    position: absolute; 
+    left: 0px; 
+}
+
+.toggle .togrow .togoptions {
+    position: absolute; 
+    right: 0px; 
+    width: 100px;     
+}
+
+.togoptions button.option1 { 
+    position: absolute; 
+    left: 0px; 
+    padding: 2px; 
+    border: none;
+    background-color: transparent; 
+    color: #000088; 
+}
+
+.togoptions button.option1:hover {
+    color: #0000ff;
+    cursor: pointer; 
+}
+
+.togoptions button.option2 { 
+    position: absolute; 
+    right: 0px; 
+    padding: 2px; 
+    border: none;
+    background-color: transparent; 
+    color: #000088; 
+}
+
+.togoptions button.option2:hover {
+    color: #0000ff;
+    cursor: pointer; 
+}
+.apology {
+    text-align: center;
+    font-size: 12pt;
+    position: center;
+}
+
+.poetry {
+	width: 320px; 
+	text-align: justify;
+}
+
+.hidden {
+	display: none;
+}
+
+.info {
+	color: green;
+	font-weight: bold;
+}
+
+.warning {
+	color: red;
+	font-weight: bold;
+}
+
+.padding {
+    padding: 10px;
+}
+
